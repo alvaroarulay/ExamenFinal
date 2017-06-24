@@ -1,0 +1,15 @@
+<h3>Bienvenido a  <%= title %></h3>
+<table border="1">
+   <tr>
+   	   <td>Id</td>
+       <td>Nombre</td>
+       <td>Nota</td>
+    </tr> 
+<% var i; for(i=0; i< nota.length; i++) { %>
+   <tr>
+       <td><%= i %></td>
+       <td><%= nota[i].nombre %></td>
+       <td><%= nota[i].notaFinal %></td>
+    </tr>   
+<% } %>
+</table>
